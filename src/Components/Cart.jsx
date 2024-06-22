@@ -48,7 +48,7 @@ const Cart = () => {
   };
 
   return (
-    <div className="container my-5 py-5">
+    <div className="container m-5 ">
       <div className="sticky-header d-flex justify-content-between mb-4">
         <h3>Total Quantity: {totalQuantity}</h3>
         <h3>Total Price: ₹{totalPrice.toFixed(2)}</h3>
@@ -78,11 +78,11 @@ const Cart = () => {
               <div className="d-flex justify-content-between m-3 gap-2 align-items-center">
                 <div className="input-group input-group-sm align-items-center">
                   <button
-                    className="btn btn-outline-secondary"
+                    className="btn btn-outline-secondary m-2"
                     type="button"
                     onClick={() => handleAdd(product.id)}
                   >
-                    +
+                    ➕
                   </button>
                   <input
                     type="text"
@@ -91,11 +91,11 @@ const Cart = () => {
                     readOnly
                   />
                   <button
-                    className="btn btn-outline-secondary"
+                    className="btn btn-outline-secondary "
                     type="button"
                     onClick={() => handleSub(product.id)}
                   >
-                    -
+                   ➖
                   </button>
                 </div>
                 <button
