@@ -48,15 +48,18 @@ const Cart = () => {
   };
 
   return (
-    <div className="container m-5 p-5">
-      <div className="d-flex justify-content-between mb-4">
+    <div className="container my-5 py-5">
+      <div className="sticky-header d-flex justify-content-between mb-4">
         <h3>Total Quantity: {totalQuantity}</h3>
         <h3>Total Price: ₹{totalPrice.toFixed(2)}</h3>
       </div>
       <div className="row">
         {data.map((product) => (
-          <div key={product.id} className="col-12 col-md-6 col-lg-4 mb-4">
-            <div className="card">
+          <div
+            key={product.id}
+            className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4"
+          >
+            <div className="card h-100">
               <img
                 src={product.thumbnail}
                 className="card-img-top"
